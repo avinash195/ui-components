@@ -1,3 +1,7 @@
+:root {
+  --active-tab-color: blueviolet;
+}
+
 .tabs {
   display: flex;
   gap: 10px;
@@ -5,13 +9,19 @@
 
 .tabs-button {
   background-color: #f0f0f0;
-  border: none;
   padding: 10px;
   cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.tabs-button:not(.tabs-button-active):hover {
+  border-radius: 4px;
+  color: var(--active-tab-color);
+  border: 1px solid var(--active-tab-color);
 }
 
 .tabs-button-active {
-  background-color: blue;
+  background-color: var(--active-tab-color);
   color: #fff;
 }
 
