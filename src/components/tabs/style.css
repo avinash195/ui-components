@@ -1,0 +1,33 @@
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tabs-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tabs-button-active {
+  background-color: blue;
+  color: #fff;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tab-content-item {
+  display: none;
+}
+
+.tab-content-item-active {
+  display: block;
+}
+
+
+
