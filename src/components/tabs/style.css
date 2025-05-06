@@ -4,6 +4,12 @@
 
 .tabs {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tabs-list {
+  display: flex;
   gap: 10px;
 }
 
@@ -12,6 +18,7 @@
   padding: 10px;
   cursor: pointer;
   border: 1px solid transparent;
+  outline: none;
 }
 
 .tabs-button:not(.tabs-button-active):hover {
@@ -23,6 +30,11 @@
 .tabs-button-active {
   background-color: var(--active-tab-color);
   color: #fff;
+}
+
+.tabs-button:focus-visible {
+  outline: 2px solid var(--active-tab-color);
+  outline-offset: 2px;
 }
 
 .tab-content {

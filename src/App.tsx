@@ -1,4 +1,5 @@
 import Tabs from "./components/tabs";
+import "./App.css";
 
 const data = [
   {
@@ -20,8 +21,10 @@ const data = [
 
 function App() {
   return (
-    <div>
+    <div className="wrapper">
+      <button>A focusable element</button>
       <Tabs data={data} />
+      <button>Some other focusable element</button>
     </div>
   )
 }
